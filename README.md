@@ -1,4 +1,4 @@
-Pilates
-=======
+Boe.nl
+======
 
-Responsive HTML theme based on Bootstrap 3
+Onepage website: www.boe.nl
