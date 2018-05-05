@@ -184,11 +184,11 @@ input:-moz-placeholder { color:#fff; }
     color: rgb(0, 90, 94);
 }
 h1.giant-heading {
-    font-size: 130px; 
+    font-size: 140px; 
     font-family: 'Kreon',serif; text-transform: uppercase; 
     font-weight: 700; margin: 0; padding: 0; 
     line-height: 140%;
-    letter-spacing: +4px;
+    letter-spacing: +2px;
 }
 h1.giant-letter {
     font-size: 50px; 
@@ -1533,7 +1533,13 @@ footer a {
 
     h1.giant-heading {
         font-size: 104px;
-    }
+    } 
+	h1.giant-letter {
+		font-size: 40px; 
+	}
+	h1.giant-letter::first-letter {
+		font-size: 110px; 
+	}
 }
 
 
@@ -1542,6 +1548,12 @@ footer a {
     h1.giant-heading {
         font-size: 82px;
     }
+    h1.giant-letter {
+		font-size: 30px; 
+	}
+	h1.giant-letter::first-letter {
+		font-size: 90px; 
+	}
 }
 
 
@@ -1561,7 +1573,12 @@ footer a {
         font-size: 65px;
         text-align: center;
     }
-
+    h1.giant-letter {
+		font-size: 20px; 
+	}
+	h1.giant-letter::first-letter {
+		font-size: 70px; 
+	}
 
     .blog .left .news > img, .blog .right .news > img {
         float: none;

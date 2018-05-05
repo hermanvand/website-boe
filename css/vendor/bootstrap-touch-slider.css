@@ -212,7 +212,7 @@
     
     padding: 0;
     color: #ffffff;
-    font-size: 280px;
+    font-size: 240px;
     font-style: normal;
     line-height: 84px;
     margin-bottom: 30px;
@@ -289,16 +289,38 @@
 /*------------------------------------------------------*/
 /* RESPONSIVE
 /*------------------------------------------------------*/
+/*
+h1:
+    font-size: 280px;
+    line-height: 84px;
+    margin-bottom: 30px;
+p:
+    font-size: 80px;
+    line-height: 100px;
+*/
+
+@media (max-width: 1200px) {
+    .slide-text h1 {
+		font-size: 200px;
+		line-height: 64px;
+		margin-bottom: 30px;
+	}
+    .slide-text > p {
+        font-size: 48px;
+        line-height: 80px;
+    }
+}
 
 @media (max-width: 991px) {
     .slide-text h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 150px;
+        line-height: 40px;
         margin-bottom: 20px;
     }
     .slide-text > p {
 
         font-size: 18px;
+        line-height: 60px;
     }
 }
 
@@ -309,7 +331,7 @@
         padding: 10px 50px;
     }
     .slide-text h1 {
-        font-size: 30px;
+        font-size: 80px;
         line-height: 40px;
         margin-bottom: 10px;
     }
@@ -328,7 +350,7 @@
         padding: 10px 30px;
     }
     .slide-text h1 {
-        font-size: 20px;
+        font-size: 60px;
         line-height: 25px;
         margin-bottom: 5px;
     }
