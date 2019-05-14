@@ -1,3 +1,20 @@
+// chrome anchor fix
+// https://stackoverflow.com/questions/38588346/anchor-a-tags-not-working-in-chrome-when-using
+ $(function() {
+       $('a[href*="#"]:not([href="#"])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html, body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
+     });
+     
 (function($,sr) {
 	// debouncing function from John Hann
 	// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
